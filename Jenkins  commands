@@ -1,0 +1,62 @@
+Jenkins Commands and Scenarios
+🔧 Jenkins Setup and Configuration
+•	jenkins --version
+→ Check Jenkins version installed.
+•	sudo systemctl start jenkins
+→ Start Jenkins service.
+•	sudo systemctl stop jenkins
+→ Stop Jenkins service.
+•	sudo systemctl status jenkins
+→ Check Jenkins service status.
+•	sudo systemctl enable jenkins
+→ Enable Jenkins to start on boot.
+•	sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+→ Get initial admin password after installation.
+📁 Jenkins Job Management (CLI and UI)
+•	jenkins-cli.jar -s http://localhost:8080/ create-job <job-name> < config.xml
+→ Create a new job from config file.
+•	jenkins-cli.jar -s http://localhost:8080/ delete-job <job-name>
+→ Delete a Jenkins job.
+•	jenkins-cli.jar -s http://localhost:8080/ build <job-name>
+→ Trigger a build for a job.
+•	jenkins-cli.jar -s http://localhost:8080/ disable-job <job-name>
+→ Disable a job.
+•	jenkins-cli.jar -s http://localhost:8080/ enable-job <job-name>
+→ Enable a job.
+🔁 Jenkins Pipeline and Build Commands
+•	pipeline syntax
+→ Used in UI to generate pipeline script snippets.
+•	agent any
+→ Used in Jenkinsfile to run on any available agent.
+•	steps { ... }
+→ Defines the build steps in a pipeline.
+•	post { success { ... } failure { ... } }
+→ Post-build actions based on result.
+🔐 Jenkins User and Security Management
+•	Manage Jenkins > Configure Global Security
+→ Enable security and configure authentication.
+•	Manage Jenkins > Manage Users
+→ Add or remove users.
+•	Manage Jenkins > Configure Credentials
+→ Add credentials for Git, Docker, etc.
+📦 Jenkins Plugin Management
+•	Manage Jenkins > Manage Plugins
+→ Install, update, or remove plugins.
+•	jenkins-cli.jar -s http://localhost:8080/ install-plugin <plugin-name>
+→ Install plugin via CLI.
+•	jenkins-cli.jar -s http://localhost:8080/ list-plugins
+→ List installed plugins.
+📜 Jenkins Logs and Monitoring
+•	/var/log/jenkins/jenkins.log
+→ Main Jenkins log file.
+•	Manage Jenkins > System Log
+→ View logs from the UI.
+•	Manage Jenkins > Load Statistics
+→ Monitor system load and performance.
+🧪 Jenkins Testing and Debugging
+•	echo 'Hello World'
+→ Simple shell step to test pipeline.
+•	sh 'exit 1'
+→ Simulate a failed build step.
+•	archiveArtifacts artifacts: '**/*.jar'
+→ Archive build artifacts.

@@ -1,0 +1,44 @@
+git configuration
+git config--global user.name reddyrajender
+git config --global user.name reddyrajender@gmail.com
+git config --list
+
+Repository Setup
+git init
+git clone "url"
+
+Staging and Committing 
+git status 
+git add "file" for particular file
+git add . "for all file"
+git commit -m "commit message"
+
+Branching and Merging 
+git branch    === " List, create, or delete branches"
+git branch "branch name"
+git checkout "branch name"   "Switch branches or restore working tree files"
+git switch "name"
+git merge "name"
+
+Remote repositories
+git remote -v
+get fetch 
+git pull
+git push
+
+Logs and Diffs
+git log
+git log --oneline
+git diff
+git show "commit"
+
+stash and Revert
+git stash
+git stash pop
+git revert "commit"
+git reset "file"
+
+git reflog
+git cherry-pick "hash"
+git tag "name"
+git bisect

@@ -42,3 +42,182 @@ git reflog
 git cherry-pick "hash"
 git tag "name"
 git bisect
+
+******************************************
+
+Git Commands: Uses and Scenarios
+Git Configuration
+•	Command: git config --global user.name "Your Name"
+Use: Sets your Git username globally
+Scenario: Run once after installing Git
+
+•	Command: git config --global user.email "you@example.com"
+Use: Sets your Git email globally
+Scenario: Required for commit history
+
+•	Command: git config --list
+Use: Lists all Git configuration settings
+Scenario: To verify your Git setup
+
+Repository Setup
+•	Command: git init
+Use: Initializes a new Git repository
+Scenario: When starting a new project
+
+•	Command: git clone <url>
+Use: Clones an existing repository
+Scenario: When working on an existing project
+
+Staging and Committing
+•	Command: git status
+Use: Shows the status of changes
+Scenario: To see what’s staged, unstaged, or untracked
+
+•	Command: git add <file>
+Use: Stages a specific file
+Scenario: When you want to commit only certain files
+
+•	Command: git add .
+Use: Stages all changes in the directory
+Scenario: When you're ready to commit everything
+
+•	Command: git commit -m "message"
+Use: Commits staged changes with a message
+Scenario: To save a snapshot of your changes
+
+Branching and Merging
+•	Command: git branch
+Use: Lists all branches
+Scenario: To view or manage branches
+
+•	Command: git branch <branch-name>
+Use: Creates a new branch
+Scenario: To work on a new feature or fix
+
+•	Command: git checkout <branch-name>
+Use: Switches to a branch
+Scenario: To move between branches
+
+•	Command: git switch <branch-name>
+Use: Alternative to checkout for switching
+Scenario: Easier syntax for switching branches
+
+•	Command: git merge <branch-name>
+Use: Merges a branch into the current one
+Scenario: To combine changes from another branch
+
+Remote Repositories
+•	Command: git remote -v
+Use: Shows remote URLs
+Scenario: To verify remote connections
+
+•	Command: git fetch
+Use: Downloads changes but doesn’t merge
+Scenario: To see what’s new before merging
+
+•	Command: git pull
+Use: Fetches and merges changes
+Scenario: To update your local branch
+
+•	Command: git push
+Use: Uploads local commits to remote
+Scenario: To share your changes
+
+Logs and Diffs
+•	Command: git log
+Use: Shows commit history
+Scenario: To review past commits
+
+•	Command: git log --oneline
+Use: Condensed commit history
+Scenario: For a quick overview
+
+•	Command: git diff
+Use: Shows file differences
+Scenario: To see what changed before committing
+
+•	Command: git show <commit>
+Use: Shows details of a specific commit
+Scenario: To inspect a particular change
+
+Stash and Revert
+•	Command: git stash
+Use: Saves uncommitted changes temporarily
+Scenario: When switching branches without committing
+
+•	Command: git stash pop
+Use: Restores stashed changes
+Scenario: To continue working on stashed changes
+
+•	Command: git revert <commit>
+Use: Reverts a specific commit
+Scenario: To undo a commit without rewriting history
+
+•	Command: git reset <file>
+Use: Unstages a file
+Scenario: To remove a file from the staging area
+
+Advanced Commands
+•	Command: git reflog
+Use: Shows history of HEAD changes
+Scenario: To recover lost commits
+
+•	Command: git cherry-pick <hash>
+Use: Applies a specific commit from another branch
+Scenario: To copy a commit without merging the whole branch
+
+•	Command: git tag <name>
+Use: Tags a commit
+Scenario: To mark versions or releases
+
+•	Command: git bisect
+Use: Finds the commit that introduced a bug
+Scenario: For debugging regressions
+
+Other Useful Commands
+•	Command: git rm <file>
+Use: Removes a file from the repo and stages the deletion
+Scenario: To delete a file from version control
+
+•	Command: git mv <old> <new>
+Use: Renames a file and stages the change
+Scenario: To rename files in Git
+
+•	Command: git clean -fd
+Use: Removes untracked files and directories
+Scenario: To clean up working directory
+
+•	Command: git archive
+Use: Creates a zip/tar archive of the repository
+Scenario: To export a snapshot of the project
+
+•	Command: git blame <file>
+Use: Shows who last modified each line of a file
+Scenario: To trace changes line-by-line
+
+
+
+
+
+
+*******************************************
+
+
+
+ Git Configuration
+Command	Use	When to Use
+git config --global user.name "Your Name"	Sets your Git username globally.	Run once after installing Git.
+git config --global user.email "you@example.com"	Sets your Git email globally.	Required for commit history.
+git config --list	Lists all Git configuration settings.	To verify your Git setup.
+❗ You had a typo: git config--global → should be git config --global
+
+📁 Repository Setup
+Command	Use	When to Use
+git init	Initializes a new Git repository.	When starting a new project.
+git clone <url>	Clones an existing repository.	When working on an existing project.
+📥 Staging and Committing
+Command	Use	When to Use
+git status	Shows the status of changes.	To see what’s staged, unstaged, or untracked.
+git add <file>	Stages a specific file.	When you want to commit only certain files.
+git add .	Stages all changes in the directory.	When you're ready to commit everything.
+git commit -m "message"	Commits staged changes with a message.	To save a snapshot of your changes.
